@@ -539,6 +539,8 @@ for ii=1:no_images
     img_similarity= try_matching0805(img_act, img_ref, downscaled_xy_pix,BlockSz_Stg7);
     figure; imshowpair(img_act,img_ref,'montage')
     title(strcat('ARA Slice Corresponding to the Anchor Img No.',num2str(ii)));
+    
+    saveas(gcf,strcat("Step4_ARA_Slices_",ii,".fig"));
 end
 
 clearvars VOL VOL_rot VOL_ori
