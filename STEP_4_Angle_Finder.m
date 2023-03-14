@@ -540,7 +540,7 @@ for ii=1:no_images
     figure; imshowpair(img_act,img_ref,'montage')
     title(strcat('ARA Slice Corresponding to the Anchor Img No.',num2str(ii)));
     
-    saveas(gcf,strcat("Step4_ARA_Slices_",ii,".fig"));
+    saveas(gcf,strcat("Step4_ARA_Slices_",num2str(ii),".fig"));
 end
 
 clearvars VOL VOL_rot VOL_ori
